@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virement Bancaire - Noris Banque</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* En-tête */
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header img {
+            height: 40px;
+            margin-left: 10px;
+        }
+
+        .header .title {
+            font-size: 24px; /* Plus grand texte */
+            font-weight: bold; /* Texte en gras */
+            color: gold; /* Couleur élégante */
+            text-shadow: 2px 2px 4px #000000; /* Ombre pour style premium */
+            font-family: "Georgia", serif; /* Police plus sophistiquée */
+        }
+
+        /* Conteneur principal */
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h2 {
+            color: #003366;
+            text-align: center;
+        }
+
+        /* Détails de la transaction */
+        .transaction-details {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .transaction-details td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .transaction-details td:first-child {
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Message après confirmation */
+        .confirmation-message {
+            display: block;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffcc00;
+            border: 1px solid #ff9900;
+            border-radius: 5px;
+            color: #663300;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Pied de page */
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+        }
+
+        /* Sections de sécurité */
+        .security-info {
+            background-color: #e0f7fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .security-info ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        .security-info li {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 14px;
+            color: #003366;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête -->
+    <div class="header">
+        <img src="noris.png" alt="Noris Banque" class="logo">
+        <div class="title">Noris Banque - Espace Client Sécurisé</div>
+    </div>
+
+    <!-- Conteneur principal -->
+    <div class="container">
+        <h2>Vérification du Virement Bancaire</h2>
+        
+        <p><strong>Numéro de transaction :</strong> <span style="color: #003366;">#TX1234567890</span></p>
+
+        <table class="transaction-details">
+            <tr>
+                <td>Bénéficiaire :</td>
+                <td>Hochrein József</td>
+            </tr>
+            <tr>
+                <td>Banque destinataire :</td>
+                <td>K&H Bank</td>
+            </tr>
+            <tr>
+                <td>BIC / SWIFT :</td>
+                <td>K&HREVOLT</td>
+            </tr>
+            <tr>
+                <td>IBAN :</td>
+                <td>HU13 1040 4735 8676 8265 8453 1003</td>
+            </tr>
+            <tr>
+                <td>Montant du virement :</td>
+                <td style="color: green; font-weight: bold;">500 000 €</td>
+            </tr>
+            <tr>
+                <td>Frais de transaction :</td>
+                <td style="color: red; font-weight: bold;">1 500 €</td>
+            </tr>
+            <tr>
+                <td>Statut :</td>
+                <td style="color: green; font-weight: bold;">Virement validé et en cours de traitement</td>
+            </tr>
+        </table>
+
+        <!-- Message de confirmation -->
+        <div class="confirmation-message">
+            ✅ **Votre virement a été validé et est en cours de traitement.**<br>
+            📌 **Veuillez noter que le paiement des frais de <strong>1 500 €</strong> est nécessaire pour finaliser le virement.**<br>
+            📞 Un conseiller bancaire vous contactera pour finaliser la transaction.
+        </div>
+
+        <!-- Informations de sécurité -->
+        <div class="security-info">
+            <strong>Mesures de sécurité :</strong>
+            <ul>
+                <li>Le virement a été validé avec succès. Pour garantir la sécurité de vos fonds, ce paiement nécessite une confirmation.</li>
+                <li>Assurez-vous que l'adresse de cette page commence par <strong>https://</strong> pour garantir une connexion sécurisée.</li>
+                <li>Pour toute question, contactez notre support disponible 24/7.</li>
+            </ul>
+        </div>
+
+        <!-- Contact du service client -->
+        <div class="contact-info">
+            <strong>Contactez notre service client :</strong><br>
+            📞 Tél : +33 1 23 45 67 89<br>
+            ✉ Email : support@norisbanque.fr
+        </div>
+
+        <p class="footer">Noris Banque © 2025 - Tous droits réservés | <a href="/privacy-policy">Politique de confidentialité</a></p>
+    </div>
+
+</body>
+</html>
